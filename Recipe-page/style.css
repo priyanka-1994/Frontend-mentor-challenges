@@ -5,6 +5,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 1;
 }
 img {
     max-width: 100%;
@@ -24,15 +25,52 @@ img {
   display: flex;
   flex-direction: column;
   min-width: 300px;
-  max-width: 400px;
+  max-width: 660px;
+  line-height: 2;
 }
 .prepare-time{
   background-color: hsl(330, 100%, 98%);
   border-radius: 9px;
   padding: 16px;
   margin-top: 15px;
+  /* line-height: 2; */
 }
-#preparation {
+.preparation, .main-color{
   color: hsl(14, 45%, 36%);
   font-weight: bold;
+}
+.ingredient {
+  line-height: 2;
+}
+.instructions {
+  line-height: 2;
+}
+.instructions ol li {
+  padding-left: 2rem;
+  text-align: left;
+}
+.nutrition-table table {
+  width: 65%;
+  border-collapse: collapse;
+}
+.nutrition-table tr {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.nutrition-table td {
+  text-align: left;
+  padding: 0.55rem 2rem;
+}
+.nutrition-table tbody tr:nth-child(1) {
+  border-bottom: 1px solid lightgray;
+}
+.nutrition-table tbody tr:nth-child(2) {
+  border-bottom: 1px solid lightgray;
+}
+.nutrition-table tbody tr:nth-child(3) {
+  border-bottom: 1px solid lightgray;
+}
+.nutrition-table tr:last-child td {
+  border-bottom: none;
 }
